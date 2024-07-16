@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunraysfoundation</title>
+  <style>
+    /* Basic Styles */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 12pt;
+      color: #E58824;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin-bottom: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      /* Limit the width for better readability */
+      margin: 0 auto;
+      /* Center the content */
+      padding: 20px;
+      display: flex;
+      /* Use flexbox for easier layout */
+      gap: 5px;
+      margin-top: 20px;
+    }
+
+    .left-column {
+      flex: 1;
+      /* Allow left column to take up available space */
+      display: flex;
+      /* Use flexbox for easier layout */
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .logo {
+      width: 100%;
+      /* Make the logo responsive */
+      height: auto;
+    }
+
+    .logo img {
+      width: 100%;
+      height: auto;
+    }
+
+    .office-info,
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      /* Stack office info vertically on smaller screens */
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .office-item,
+    .contact-item {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10pt;
+    }
+
+    .office-item b,
+    .contact-item b {
+      font-size: 12pt;
+    }
+
+    .icon {
+      display: flex;
+      gap: 5px;
+      margin-top: 20px;
+    }
+
+    .icon img,
+    .icon i {
+      width: 32px;
+      height: 32px;
+    }
+
+    /* Responsive Styles */
+
+    /* Tablet Styles (Screen sizes between 600px and 900px) */
+    @media screen and (min-width: 600px) and (max-width: 900px) {
+      .container {
+        flex-direction: row;
+        /* Stack columns vertically */
+        gap: 30px;
+        /* Add space between columns */
+      }
+
+      .left-column {
+        max-width: 250px;
+        /* Adjust logo width for tablet layout */
+      }
+
+      .office-info,
+      .contact-info {
+        flex-direction: row;
+        /* Arrange office info horizontally */
+        justify-content: space-between;
+        /* Distribute items evenly */
+      }
+
+      .contact-item {
+        flex-direction: row;
+        /* Arrange contact items horizontally */
+        justify-content: space-between;
+      }
+
+      .icon {
+        display: flex;
+        gap: 5px;
+        margin-top: 20px;
+        justify-content: start;
+      }
+    }
+
+    /* Desktop Styles (Screen sizes larger than 900px) */
+    @media screen and (min-width: 900px) {
+      .container {
+        flex-direction: row;
+        /* Align columns horizontally */
+        gap: 30px;
+        /* Add space between columns */
+      }
+
+      .left-column {
+        max-width: 250px;
+        /* Adjust logo width for desktop layout */
+      }
+
+      .office-info,
+      .contact-info {
+        flex-direction: row;
+        /* Arrange office info horizontally */
+        justify-content: space-between;
+        /* Distribute items evenly */
+      }
+
+      .contact-item {
+        flex-direction: row;
+        /* Arrange contact items horizontally */
+        justify-content: space-between;
+      }
+
+      .icon {
+        display: flex;
+        gap: 5px;
+        margin-top: 20px;
+        justify-content: start;
+      }
+    }
+
+    /* Mobile Styles (Screen sizes smaller than 600px) */
+    @media screen and (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        /* Stack columns vertically */
+        gap: 10px;
+        /* Add space between columns */
+      }
+
+      .left-column {
+        max-width: 250px;
+        /* Adjust logo width for desktop layout */
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 63px;
+      }
+
+      .logo {
+        width: 100%;
+        /* Center the logo */
+      }
+
+      .office-info,
+      .contact-info {
+        flex-direction: column;
+        /* Stack vertically */
+        align-items: center;
+      }
+
+      .contact-item {
+        flex-direction: column;
+        /* Stack vertically */
+        text-align: center;
+        /* Center text */
+      }
+
+      .icon {
+        display: flex;
+        gap: 5px;
+        margin-top: 20px;
+        justify-content: center;
+      }
+    }
+
+    .contact-item b {
+
+      margin-right: 5px;
+      /* Add a small space between the label and the link */
+    }
+
+    .center {
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-column">
+      <p>Kind Regards</p>
+      <div class="logo">
+        <a href="https://sunraysfoundation.org/">
+          <img src="/public/Logo-01.png" alt="WELCOME TO SRF" style="width: 200px; height: 155px" ;>
+        </a>
+      </div>
+    </div>
+
+    <div class="center">
+      <div>
+        <div class="office-info">
+          <div class="office-item">
+            <b>SOUTH SUDAN OFFICE</b><br>
+            <span><b>P: </b>+211 929 975 708</span>
+          </div>
+          <div class="office-item">
+            <b>KENYA OFFICE</b><br>
+            <span><b>P: </b>+254 702 676 918</span>
+          </div>
+          <div class="office-item">
+            <b>UGANDA OFFICE</b><br>
+            <span><b>P: </b>+256 760 247 726</span>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <b>Email: </b>
+            <a href="mailto:info@sunraysfoundation.org" class="moz-txt-link-freetext"
+              style="text-decoration: none; color: #E58824;">info@sunraysfoundation.org</a>
+          </div>
+          <div class="contact-item">
+            <b>Website:</b>
+            <a href="https://sunraysfoundation.org"
+              style="text-decoration: none; font-size: 10pt; color: #E58824;">https://sunraysfoundation.org/</a>
+          </div>
+        </div>
+
+        <div class="icon">
+          <a href="https://www.facebook.com/profile.php?id=61553897036925" target="_blank"
+            style="margin-right:5px; color:#000; text-decoration:none;">
+            <img style="width:32px; height:32px;"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAAsSAAALEgHS3X78AAAB3ElEQVRIieWXv0rDUBSHv4pdVKxLlzpkcVTM1o4FQSchFHwCX6DgC9gnMLgrjoKlBFx0ULo6CK2DLoLcxdkUuuhQh96U5OYmubUpHfxBIT25+X33z2nOaWE0GrEoLS2MvGj4sulAy+lsAA5QB2xgN3S7D/SALuAJr/Fl4lnIOnMJbcpPycDTB1zAzZpEKtxyOjbgAZYBVJUAHOE1elPDJbiL2WqT5AP1pAloEy4nMPL5rvSLKbZyecY9MrZ6fbXIQbXCfrXC+lqR9oPg5lEkDReAreaALtubJuA7d4/N8kokngK3pO9pOBjZ9lBmp+r4cCsGNlBT+k+krtzB4JxrO+XJdftRcHL+bAIvSf+rIKAmXN3EJSxDsNZfXbk2KwPVtscrLq0WY7HB8JvXDz8LHvGPZLvldFJfd8JrJN67vH2ndfGSBUd4jUJwnVthGQx/pn7GuLAAuNdvABztWZNsD2L3T58zw/tEq1VEZxJU2ylP4EHMUP3wF3XbE4tATor4q/DunOERfxXuMa5E85Av/fVw+eJ35wSPNRe6n5rLuArlKYFmUdpmIsd6DikNhfYlIwfWmf38p+9klAn89QhEGjgVHpqADbQw3wVfjrfTwGDQOgdaSN8+T/3f/2q/DgCwzx2PEQgAAAAASUVORK5CYII=" />
+          </a>
+          <a href="https://www.instagram.com/sunra_ysfoundation19/?hl=en" target="_blank"
+            style="margin-right:5px; color:#000; text-decoration:none;">
+            <img style="width:32px; height:32px;"
+              src="data:image/png;base64,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" />
+          </a>
+          <a href="https://www.linkedin.com/company/sunraysfoundation" target="_blank"
+            style="margin-right:5px; color:#000; text-decoration:none;">
+            <img style="width:32px; height:32px;"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAAsSAAALEgHS3X78AAACD0lEQVRIieWXMWvbQBiGH5cYlKVWkqEUAnbWLBFZCll6XTq4i36CC92boZspSQje3d2Df0ADWuKhGaouxVNwMmS1BYFObaUuNqSgDD5c3VmSZSHjoS9o0Pnufb6773T3uRSGIevSk7WR1w3fyNqx1OyZgA0IwAIOIj/fAAPABZywVfczeS7KuYQey6eSwTMA2kB7URCp8FKzZwEOUM0A1eUBdtiqD5aGS7BLttkmKQBEUgCxG64gMHK8K/0Ww2WOnThwbWszbwCO9E2HM91YczluHO4y/PCKxuFungCq0leRknMZ3YiYWfsfX1MxNggmfzHPv+QJIABq0S9An7kdBwYQnT6eP0Z0+nnASF872qAfMiJppGmUaXy+nb1bz59iGmX8yQOj32Ps/WeYRhl3+JPBjz9JNgLoJsFjdyXA13cvAPg2/IXo9Gm/2efl3jaeP8Y0ylSMf1afvo84vryLs1H89WU/YElVzU0FDPD+qJbUXfEv5GJ5e3HL1vkVnj+etYm9nYXjCoF3r+/xJw90r++XGqfDb4oIJkWKvw5PvAQKkuKvw90VwxV/He4wPYlWoUD6zzR3pZaavVPgZAXws7BVP402xO32NtNCoEh50lfRHFwe/DbFLX/AtKKZK6liv3NZeYgCAli+ktECyJsCLw2cCo8EYAFnZF+FQPa30sCQoXSedVxH3b5K/b//1R4BSzu3Oz4YYhUAAAAASUVORK5CYII=" />
+          </a>
+          <a href="https://www.youtube.com/sunraysfoundation" target="_blank"
+            style="margin-right:5px; color:#000; text-decoration:none;">
+            <img style="width:32px; height:32px;"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAAsSAAALEgHS3X78AAAB7klEQVRIieWXvWobQRSFv1lSrnFKp7KbkNJLVLlTHwLqjHsjg9OocBsk4RdQa0iRN4iLPMCSRtXacmnSRE2UMku23kmhkb3zq5HYoCIHBOLO7Dnn3pmduSuklOwKyc6Udy3+InZifdJ5CfSALpABx43hB2AG5MBtMi1+x3CKdWuuRAfqtx/BWQITYLLORFC8PulkwC1wGCFqYg70kmkx21hcCefEZetDCXR9BpwbriVh1PO54rNgZa7WeMZ2pfZhDmTmHnBlPmhZGMU3MINa5irrH4TK/foNYi+1wvJPBd8fQwZK4KiZvfme91zC4t17xOAKUlv0ac7qT1Uhr4fIb7k5ZV/xf14FzLJ3ncTnF0FhDWmK+Dj2jWr8prhzV3Lwyo7dF0EDHmj8pvgxkagv+8gP/bAJGxr/2otFvO14x+RdQX09gl+LTQw8Ye3FIu+K583URLqHOL9AnJ5tJewSfyCy9MmXr/GbUOd/5jAG3ZdAVdmxkLB/GTR+Uzx3PVFf9t0GPJCfbnxDGn97J9xiAYufIU/WCee6WEbAMMSyJcbJtBg1A65XbcLyFmoTc8WrwRJXZemxLFMbKFl2NFZL5TxkVOfRbcHA5p2MYWDbJZiHhIPiDQMZMCa+CqWan4WEIaJ1XmEnffu/xP/7rfYXCYC3qt/KmXAAAAAASUVORK5CYII=" />
+          </a>
+          <a href="https://twitter.com/sunraysfoundation" target="_blank"
+            style="margin-right:5px; color:#000; text-decoration:none;">
+            <img style="width:32px; height:32px;"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAACXBIWXMAAAsSAAALEgHS3X78AAAB90lEQVRIieVX0XGjMBB9ubn/VQeiA9GB3QHpgHTAdSB3QDogHeAO7A7gKoCrQEoF7z4CJGAQOHHGN3NvRj9Iuw/t212WB5K4F37cjfne5D+vOKsAPALYA4gBmA97vwHUAM4AjgD8Jo8k15YieSDpuQ2+O6/WfK8RxyTbjaRTtJ39p8jjK267BB96ge8kXn2BB17WueqSR1+RjGv4g7ckHSXiXLb/mhLXdQ3v3+2iKEIURSMj7z3qugYA7Pf7qU/d+T2Mnk5CoebCXZYlAQxLROicG/adczTGEACttaHwjypgSv60ZJllGQGwKAqKCHe73bCXpikBME3TNf2fQuQvIUtjDEWERVEQAPM8p7WWAGiMGUVjAS8h8jpk2TTNcOv+tgCotd5CzM7/Ivkqev2zLBt0Pp1OW0x7fJ6cfNe4D/8GrW9PrrUeNC+K4svkQc1JMs/zIcFEhEmSMEkSigirqlozD2oezPZebxFh0zRD2K211FrTGLNGHsz2xTqvqooicnHDXoI+IlmWhciDdT7b4ZxzFJFZbZ1z1FqPOmBZlnPEFx1u2ts9gGcAdtq3j8cjlFKI43hkoJTC+XxG27ajZzN4xuTDctev2twA6fE2q73eiPi183c51000/ycmmbvPcB8r4MBvmF7nEm4JN5/bryG/Of7ff7W/epmErPBAgzgAAAAASUVORK5CYII=" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
