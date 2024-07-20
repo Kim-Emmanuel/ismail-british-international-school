@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const NotFound = () => {
   return (
-    <div className='flex flex-col items-center justify-center h-screen bg-gray-100'>
+    <div className='flex flex-col items-center justify-center h-screen bg-gray-100 mobile:px-6 mobile:text-center'>
       <h1 className='text-4xl font-bold text-gray-800 mb-4'>
         404 - Page Not Found
       </h1>
@@ -23,8 +23,8 @@ const NotFound = () => {
         <Image
           src={notfound}
           alt='Not Found'
-          width={450}
-          height={450}
+          width={400}
+          height={400}
           className='object-contain max-w-full'
         />
       </div>

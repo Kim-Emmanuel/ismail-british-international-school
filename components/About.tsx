@@ -169,18 +169,11 @@ const About = () => {
 
 	return (
 		<>
-			<Head>
-				<title>About - Ismail British International School</title>
-				<meta
-					name='description'
-					content='About Ismail British International School'
-				/>
-			</Head>
-			<main className='relative mt-16'>
+			<main className='relative px-4 py-2 container mx-auto tablet:px-8 laptop:px-16 desktop:px-1 2xl:px-64'>
 				{/* Education as background element */}
 				<motion.div
 					ref={ref10}
-					className='absolute flex items-center justify-start py-18 px-14 z-0'
+					className='absolute px-16 flex items-center justify-center z-0'
 					initial={{ opacity: 0, scale: 0.8 }}
 					animate={magnifyingGlassAnimation}
 					transition={{ duration: 1, delay: 0.5 }}
@@ -197,8 +190,9 @@ const About = () => {
 					/>
 				</motion.div>
 
+
 				<motion.div
-					className='container mx-auto tablet:px-16 desktop:px-32 py-16 flex flex-col items-start text-start'
+					className='py-16 mx-auto tablet:px-8 laptop:px-16 desktop:px-32 2xl:px-64 flex flex-col items-start text-start'
 					variants={containerVariants}
 					initial='hidden'
 					animate='show'>
@@ -268,220 +262,221 @@ const About = () => {
 						</button>
 					</div>
 				</motion.div>
+			</main>
 
-				<div
-					className='container mx-auto py-6 mt-16 mb-8 px-4 tablet:px-8 laptop:px-16 desktop:px-32 2xl:px-64 relative'
-					ref={refMissionVision}>
-					<motion.h1
-						className='text-4xl font-medium text-sudo flex justify-center text-center mb-2'
-						initial={{ opacity: 0, y: 20 }}
-						animate={controlsMissionVision}>
-						Mission and Vision
-					</motion.h1>
-					<div className='grid grid-cols-1 tablet:grid-cols-2 gap-16'>
-						<div className='p-8 tablet:px-0 laptop:px-1 desktop:px-1'>
-							<motion.h2
-								className='text-2xl font-bold mb-3 text-sudo2'
-								initial={{ opacity: 0, y: 20 }}
-								animate={controlsMissionVision}>
-								Missions
-								<div className='flex items-center mt-1'>
-									<div className='w-20 bg-orange h-0.5'></div>
-									<div className='w-20 bg-grey h-0.5'></div>
-								</div>
-							</motion.h2>
-							<motion.p
-								className='text-lg mb-6 text-sudo2 text-wrap'
-								initial={{ opacity: 0, y: 20 }}
-								animate={controlsMissionVision}>
-								Ismael British International School is dedicated to excellence -
-								striving to ensure that learners will become: inspire in diverse
-								community of learners to take a proactive role as responsible
-							</motion.p>
-						</div>
-						<div className='relative flex justify-end items-center desktop:px-1 tablet:px-0'>
-							<Image
-								src='/mission.svg'
-								alt='Ismail British International School'
-								width={180}
-								height={180}
-								className='max-w-full tablet:max-w-md' // Add max-width for responsiveness
-							/>
-						</div>
+			<div
+				className='container mx-auto py-6 mt-16 mb-8 px-4 tablet:px-8 laptop:px-16 desktop:px-32 2xl:px-64 relative'
+				ref={refMissionVision}>
+				<motion.h1
+					className='text-4xl font-medium text-sudo flex justify-center text-center mb-2'
+					initial={{ opacity: 0, y: 20 }}
+					animate={controlsMissionVision}>
+					Mission and Vision
+				</motion.h1>
+				<div className='grid grid-cols-1 tablet:grid-cols-2 gap-16'>
+					<div className='p-8 tablet:px-0 laptop:px-1 desktop:px-1'>
+						<motion.h2
+							className='text-2xl font-bold mb-3 text-sudo2'
+							initial={{ opacity: 0, y: 20 }}
+							animate={controlsMissionVision}>
+							Missions
+							<div className='flex items-center mt-1'>
+								<div className='w-20 bg-orange h-0.5'></div>
+								<div className='w-20 bg-grey h-0.5'></div>
+							</div>
+						</motion.h2>
+						<motion.p
+							className='text-lg mb-6 text-sudo2 text-wrap'
+							initial={{ opacity: 0, y: 20 }}
+							animate={controlsMissionVision}>
+							Ismael British International School is dedicated to excellence -
+							striving to ensure that learners will become: inspire in diverse
+							community of learners to take a proactive role as responsible
+						</motion.p>
 					</div>
-
-					<div className='grid grid-cols-1 tablet:grid-cols-2 gap-16 mt-6'>
-						<div className='relative tablet:px-0 desktop:px-1 flex  items-center'>
-							<Image
-								src='/vision.svg'
-								alt='Ismail British International School'
-								width={230}
-								height={230}
-								className='max-w-full tablet:max-w-md' // Add max-width for responsiveness
-							/>
-						</div>
-						<div className='p-8 desktop:px-1 tablet:px-0'>
-							<motion.h2
-								className='text-2xl font-bold mb-3 text-sudo2'
-								initial={{ opacity: 0, y: 20 }}
-								animate={controlsMissionVision}>
-								Vision
-								<div className='flex items-center mt-1'>
-									<div className='w-20 bg-orange h-0.5'></div>
-									<div className='w-20 bg-grey h-0.5'></div>
-								</div>
-							</motion.h2>
-							<motion.p
-								className='text-lg mb-6 text-sudo2 text-wrap'
-								initial={{ opacity: 0, y: 20 }}
-								animate={controlsMissionVision}>
-								To prepare today learners to confidently embrace challenges as
-								adaptable, empathetic global citizens who will be active contributors
-								for a more sustainable world.
-							</motion.p>
-						</div>
+					<div className='relative flex justify-end items-center desktop:px-1 tablet:px-0'>
+						<Image
+							src='/mission.svg'
+							alt='Ismail British International School'
+							width={180}
+							height={180}
+							className='max-w-full tablet:max-w-md' // Add max-width for responsiveness
+						/>
 					</div>
 				</div>
 
-				{/* SCHOOL IMAGE */}
-				<motion.div
-					ref={ref3}
-					className='relative bg-black/80 h-2/5'
-					initial='hidden'
-					animate={animation}
-					transition={{ duration: 1, delay: 0.5 }}>
-					<Image
-						src='/classroom.jpg'
-						alt=''
-						width={1000}
-						height={500}
-						className='object-cover w-full h-[620px]'
-					/>
-				</motion.div>
+				<div className='grid grid-cols-1 tablet:grid-cols-2 gap-16 mt-6'>
+					<div className='relative tablet:px-0 desktop:px-1 flex  items-center'>
+						<Image
+							src='/vision.svg'
+							alt='Ismail British International School'
+							width={230}
+							height={230}
+							className='max-w-full tablet:max-w-md' // Add max-width for responsiveness
+						/>
+					</div>
+					<div className='p-8 desktop:px-1 tablet:px-0'>
+						<motion.h2
+							className='text-2xl font-bold mb-3 text-sudo2'
+							initial={{ opacity: 0, y: 20 }}
+							animate={controlsMissionVision}>
+							Vision
+							<div className='flex items-center mt-1'>
+								<div className='w-20 bg-orange h-0.5'></div>
+								<div className='w-20 bg-grey h-0.5'></div>
+							</div>
+						</motion.h2>
+						<motion.p
+							className='text-lg mb-6 text-sudo2 text-wrap'
+							initial={{ opacity: 0, y: 20 }}
+							animate={controlsMissionVision}>
+							To prepare today learners to confidently embrace challenges as
+							adaptable, empathetic global citizens who will be active contributors
+							for a more sustainable world.
+						</motion.p>
+					</div>
+				</div>
+			</div>
 
-				<div className="container mx-auto py-6 mt-16 mb-8 px-4 tablet:px-8 laptop:px-16 desktop:px-32 2xl:px-64 relative" ref={refValues}>
-					<motion.h2
-						className="text-3xl font-black text-start items-center text-sudo mb-10"
-						initial={{ opacity: 0, y: 20 }}
-						animate={controlsValues}
-						transition={{ duration: 0.8, ease: "easeInOut", delay: 0.8 }}
-					>
-						Our Values
-						<div className="flex mt-2 justify-start items-center">
-							<div className="w-28 bg-orange h-0.5"></div>
-							<div className="w-28 bg-grey h-0.5"></div>
-						</div>
-					</motion.h2>
-					<div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 mt-4 gap-6">
-						{coreValues.map((coreValue) => (
-							<motion.div
-								key={coreValue.number}
-								className="flex flex-col mt-4"
+			{/* SCHOOL IMAGE */}
+			<motion.div
+				ref={ref3}
+				className='relative bg-black/80 h-2/5'
+				initial='hidden'
+				animate={animation}
+				transition={{ duration: 1, delay: 0.5 }}>
+				<Image
+					src='/classroom.jpg'
+					alt=''
+					width={1000}
+					height={500}
+					className='object-cover w-full h-[620px]'
+				/>
+			</motion.div>
+
+			<div className="container mx-auto py-6 mt-16 mb-8 px-4 tablet:px-4 laptop:px-16 desktop:px-32 2xl:px-64 relative" ref={refValues}>
+				<motion.h2
+					className="text-3xl font-black text-start items-center text-sudo mb-10"
+					initial={{ opacity: 0, y: 20 }}
+					animate={controlsValues}
+					transition={{ duration: 0.8, ease: "easeInOut", delay: 0.8 }}
+				>
+					Our Values
+					<div className="flex mt-2 justify-start items-center">
+						<div className="w-28 bg-orange h-0.5"></div>
+						<div className="w-28 bg-grey h-0.5"></div>
+					</div>
+				</motion.h2>
+				<div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 mt-4 gap-6">
+					{coreValues.map((coreValue) => (
+						<motion.div
+							key={coreValue.number}
+							className="flex flex-col mt-4"
+							initial={{ opacity: 0, y: 20 }}
+							animate={controlsValues}
+							transition={{ duration: 0.8, ease: "easeInOut" }}
+						>
+							<motion.h2
+								className="text-base font-bold text-sudo mb-2"
 								initial={{ opacity: 0, y: 20 }}
 								animate={controlsValues}
 								transition={{ duration: 0.8, ease: "easeInOut" }}
 							>
-								<motion.h2
-									className="text-base font-bold text-sudo mb-2"
-									initial={{ opacity: 0, y: 20 }}
-									animate={controlsValues}
-									transition={{ duration: 0.8, ease: "easeInOut" }}
-								>
-									<span className="text-orange font-bold text-2xl">
-										{coreValue.number}.
-									</span>{" "}
-									{coreValue.title}
-								</motion.h2>
-								<motion.p
-									className="text-sudo2"
-									initial={{ opacity: 0, y: 20 }}
-									animate={controlsValues}
-									transition={{ duration: 0.8, ease: "easeInOut" }}
-								>
-									{coreValue.description}
-								</motion.p>
-							</motion.div>
-						))}
-					</div>
-				</div>
-
-				<motion.h2
-					className='text-3xl font-bold text-center text-sudo mt-10 mb-2'
-					initial={{ opacity: 0, y: 20 }}
-					animate={controlsWhyChooseUs}>
-					Why Choose Us?
-				</motion.h2>
-				<motion.div
-					className='flex justify-center items-center'
-					initial={{ opacity: 0, y: 20 }}
-					animate={controlsWhyChooseUs}>
-					<div className='w-28 bg-orange h-0.5'></div>
-					<div className='w-28 bg-grey h-0.5'></div>
-				</motion.div>
-
-				<div
-					className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-8 container mx-auto py-6 mt-8 mb-8 px-4 tablet:px-8 laptop:px-16 desktop:px-32 2xl:px-64 relative'
-					ref={refWhyChooseUs}>
-					{[
-						{
-							icon: "/person.svg",
-							title: "Personalized Learning Paths",
-							description:
-								"We offer tailored educational experiences that cater to each child’s unique talents and learning styles.",
-						},
-						{
-							icon: "/school.png",
-							title: "Innovative Curriculum",
-							description:
-								"Our curriculum is a blend of traditional wisdom and modern innovation, ensuring a holistic development.",
-						},
-						{
-							icon: "/globe.svg",
-							title: "Global Citizenry",
-							description:
-								"We instill values for a connected world, nurturing compassionate global citizens.",
-						},
-					].map((item, index) => (
-						<motion.div
-							key={index}
-							className='bg-white p-6 border border-neutral-300 rounded-md shadow-md hover:shadow-lg hover:border-orange-500 transition-shadow duration-300 ease-in-out'
-							initial={{ opacity: 0, y: 20 }}
-							animate={controlsWhyChooseUs}>
-							<div className='flex justify-center'>
-								<div className='w-16 h-16 rounded-full border border-orange-500 flex items-center justify-center mb-4 hover:scale-110 transition-all duration-200'>
-									<Image src={item.icon} alt={item.title} width={50} height={50} />
-								</div>
-							</div>
-							<motion.h3
-								className='text-xl text-sudo text-center font-bold mb-2'
-								initial={{ opacity: 0, y: 20 }}
-								animate={controlsWhyChooseUs}>
-								{item.title}
-							</motion.h3>
+								<span className="text-orange font-bold text-2xl">
+									{coreValue.number}.
+								</span>{" "}
+								{coreValue.title}
+							</motion.h2>
 							<motion.p
-								className='text-center text-sudo2'
+								className="text-sudo2"
 								initial={{ opacity: 0, y: 20 }}
-								animate={controlsWhyChooseUs}>
-								{item.description}
+								animate={controlsValues}
+								transition={{ duration: 0.8, ease: "easeInOut" }}
+							>
+								{coreValue.description}
 							</motion.p>
 						</motion.div>
 					))}
 				</div>
+			</div>
 
-				<motion.div
-					ref={ref6}
-					className='mb-12 flex justify-center'
-					variants={containerVariants}
-					initial='hidden'
-					animate={animation}
-					transition={{ duration: 1, delay: 0.5 }}>
-					<Link href='/contact'>
-						<button className='border border-orange hover:bg-orange hover:text-white text-sudo font-bold py-2 px-4 rounded-sm'>
-							Contact Us
-						</button>
-					</Link>
-				</motion.div>
-			</main>
+			<motion.h2
+				className='text-3xl font-bold text-center text-sudo mt-10 mb-2'
+				initial={{ opacity: 0, y: 20 }}
+				animate={controlsWhyChooseUs}>
+				Why Choose Us?
+			</motion.h2>
+			<motion.div
+				className='flex justify-center items-center'
+				initial={{ opacity: 0, y: 20 }}
+				animate={controlsWhyChooseUs}>
+				<div className='w-28 bg-orange h-0.5'></div>
+				<div className='w-28 bg-grey h-0.5'></div>
+			</motion.div>
+
+			<div
+				className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-8 container mx-auto py-6 mt-8 mb-8 px-4 tablet:px-8 laptop:px-16 desktop:px-32 2xl:px-64 relative'
+				ref={refWhyChooseUs}>
+				{[
+					{
+						icon: "/person.svg",
+						title: "Personalized Learning Paths",
+						description:
+							"We offer tailored educational experiences that cater to each child’s unique talents and learning styles.",
+					},
+					{
+						icon: "/school.png",
+						title: "Innovative Curriculum",
+						description:
+							"Our curriculum is a blend of traditional wisdom and modern innovation, ensuring a holistic development.",
+					},
+					{
+						icon: "/globe.svg",
+						title: "Global Citizenry",
+						description:
+							"We instill values for a connected world, nurturing compassionate global citizens.",
+					},
+				].map((item, index) => (
+					<motion.div
+						key={index}
+						className='bg-white p-6 border border-neutral-300 rounded-md shadow-md hover:shadow-lg hover:border-orange-500 transition-shadow duration-300 ease-in-out'
+						initial={{ opacity: 0, y: 20 }}
+						animate={controlsWhyChooseUs}>
+						<div className='flex justify-center'>
+							<div className='w-16 h-16 rounded-full border border-orange-500 flex items-center justify-center mb-4 hover:scale-110 transition-all duration-200'>
+								<Image src={item.icon} alt={item.title} width={50} height={50} />
+							</div>
+						</div>
+						<motion.h3
+							className='text-xl text-sudo text-center font-bold mb-2'
+							initial={{ opacity: 0, y: 20 }}
+							animate={controlsWhyChooseUs}>
+							{item.title}
+						</motion.h3>
+						<motion.p
+							className='text-center text-sudo2'
+							initial={{ opacity: 0, y: 20 }}
+							animate={controlsWhyChooseUs}>
+							{item.description}
+						</motion.p>
+					</motion.div>
+				))}
+			</div>
+
+			<motion.div
+				ref={ref6}
+				className='mb-12 flex justify-center'
+				variants={containerVariants}
+				initial='hidden'
+				animate={animation}
+				transition={{ duration: 1, delay: 0.5 }}>
+				<Link href='/contact'>
+					<button className='border border-orange hover:bg-orange hover:text-white text-sudo font-bold py-2 px-4 rounded-sm'>
+						Contact Us
+					</button>
+				</Link>
+			</motion.div>
+
 		</>
 	);
 };

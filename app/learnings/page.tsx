@@ -4,6 +4,7 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import classroom from "@public/classroom.jpg";
+import underConstruction from "@public/under-construction.svg";
 import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -141,10 +142,19 @@ const learningPage = () => {
           <p>Ismail British International School welcomes applications for enrollment for all year levels...</p>
         </div>
 
-        <div className='flex justify-center items-center mt-6 mb-6 py-16 '>
-          <p className='text-xl font-semibold text-sudo'>
-            Page Under construction...
-          </p>
+        <div className='relative py-16 mb-2 flex justify-center items-center'>
+          <div className='absolute flex justify-center items-center top-10'>
+            <p className='text-xl font-semibold text-sudo'>
+              Page Under construction...
+            </p>
+          </div>
+          <Image
+            src={underConstruction}
+            alt='Under construction'
+            width={500}
+            height={500}
+            className='object-contain max-w-full'
+          />
         </div>
       </div>
 

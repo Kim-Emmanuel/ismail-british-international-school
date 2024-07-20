@@ -10,6 +10,7 @@ import FeaturedPrograms from "@components/FeaturedPrograms";
 import Learning from "@components/Learning";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import underConstruction from "@public/under-construction.svg";
 
 const academicsPage = () => {
   // Animation controls for hero image zoom
@@ -30,7 +31,7 @@ const academicsPage = () => {
     }
   }, [controls, inView]);
 
-    // Button hover animation
+  // Button hover animation
   const buttonVariants = {
     hover: {
       scale: 1.1,
@@ -107,6 +108,20 @@ const academicsPage = () => {
 
       {/* Featured Programs */}
       <FeaturedPrograms />
+      <div className='relative py-16 mb-2 flex justify-center items-center'>
+        <div className='absolute flex justify-center items-center top-10'>
+          <p className='text-xl font-semibold text-sudo'>
+            Section under construction...
+          </p>
+        </div>
+        <Image
+          src={underConstruction}
+          alt='Under construction'
+          width={500}
+          height={500}
+          className='object-contain max-w-full'
+        />
+      </div>
       <Learning />
     </>
   );

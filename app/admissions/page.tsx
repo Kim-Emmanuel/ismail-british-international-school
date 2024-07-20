@@ -7,6 +7,7 @@ import admission from "@public/admission.jpg";
 import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import underConstruction from "@public/under-construction.svg";
 
 const admissionPage = () => {
   // Animation controls for hero image zoom
@@ -129,7 +130,7 @@ const admissionPage = () => {
         </div>
       </div>
 
-      <div className='container mt-16 py-4 px-4 2xl:gap-12 text-left px-6 tablet:px-12 laptop:px-20 desktop:px-32'>
+      <div className='container mt-16 py-4 px-4 text-left px-6 tablet:px-12 laptop:px-20 desktop:px-32'>
         <h1 className='text-3xl font-black text-start items-center text-sudo mb-10'>
           Admission Process
           <div className='flex mt-2 justify-start items-center'>
@@ -138,10 +139,19 @@ const admissionPage = () => {
           </div>
         </h1>
 
-        <div className='flex justify-center items-center mt-6 mb-6 py-16 '>
-          <p className='text-xl font-semibold text-sudo'>
-            Section Under construction...
-          </p>
+        <div className='relative py-16 mb-2 flex justify-center items-center'>
+          <div className='absolute flex justify-center items-center top-10'>
+            <p className='text-xl font-semibold text-sudo'>
+              Section Under construction...
+            </p>
+          </div>
+          <Image
+            src={underConstruction}
+            alt='Under construction'
+            width={500}
+            height={500}
+            className='object-contain max-w-full'
+          />
         </div>
       </div>
 
