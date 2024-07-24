@@ -136,7 +136,7 @@ const Footer = () => {
 							<h1 className='font-semibold text-lg'>Contact</h1>
 							<div className='flex flex-col gap-6 font-medium text-sudo2'>
 								<Link href='' className='text-zinc-500 hover:text-orange-700'>
-									info@ismailbritish.edu
+									info@ismaelbritish.edu
 								</Link>
 								<span className=''>Gudele (1)</span>
 								<Link href='' className='text-zinc-500 hover:text-orange-700'>
@@ -179,7 +179,7 @@ const Footer = () => {
 				{/* BOTTOM */}
 				<div className='flex flex-col tablet:flex-row items-center justify-between gap-8 mt-16'>
 					<div className='text-zinc-500'>
-						Copyright © Ismail British International School {new Date().getFullYear()}{" "}
+						Copyright © Ismael British International School {new Date().getFullYear()}{" "}
 						All rights Reserved
 					</div>
 					<div className='flex flex-col gap-8 md:flex-row'>

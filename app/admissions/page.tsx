@@ -104,7 +104,7 @@ const admissionPage = () => {
                     x: 0,
                     transition: { duration: 0.8, ease: "easeInOut", delay: 0.4 },
                   }}>
-                  Welcome to Ismail British International School.
+                  Welcome to Ismael British International School.
                 </motion.h2>
               </motion.div>
             </div>

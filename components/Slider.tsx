@@ -10,7 +10,7 @@ const slides = [
 	{
 		id: 1,
 		title: "Join Our Family",
-		description: "Experience the Ismail British difference. Enroll now!",
+		description: "Experience the Ismael British difference. Enroll now!",
 		img: "/slider1.jpg",
 		enrollUrl: "/admissions", // Replace with your Enroll page URL
 		contactUrl: "/contact", // Replace with your Contact page URL
@@ -37,7 +37,7 @@ const slides = [
 	{
 		id: 4,
 		title: "Join Our Family",
-		description: "Experience the Ismail British difference. Enroll now!",
+		description: "Experience the Ismael British difference. Enroll now!",
 		img: "/slider4.jpg",
 		enrollUrl: "/admissions", // Replace with your Enroll page URL
 		contactUrl: "/contact", // Replace with your Contact page URL

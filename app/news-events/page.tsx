@@ -137,7 +137,7 @@ const newsAndEventsPage = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  Welcome to Ismail British International School.
+                  Welcome to Ismael British International School.
                 </motion.h2>
               </div>
               <div className="absolute bottom-10 mt-4 font-semibold text-xs text-orange z-0">

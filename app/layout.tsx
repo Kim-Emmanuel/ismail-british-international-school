@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 const openSans = Open_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Ismail British International School",
-  description: "A dynamic and forward-thinking educational institution, Ismail British International School provides a nurturing environment for students to thrive academically and personally. Our commitment to excellence, innovative teaching methods, and global perspective empower students to become lifelong learners and responsible global citizens. Welcome to a world of knowledge and growth at Ismail British International School.",
+  title: "Ismael British International School",
+  description: "A dynamic and forward-thinking educational institution, Ismael British International School provides a nurturing environment for students to thrive academically and personally. Our commitment to excellence, innovative teaching methods, and global perspective empower students to become lifelong learners and responsible global citizens. Welcome to a world of knowledge and growth at Ismael British International School.",
 };
 
 export default function RootLayout({

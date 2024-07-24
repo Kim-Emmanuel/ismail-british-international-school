@@ -58,7 +58,7 @@ const Welcome = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={controlsContent}
         >
-          Welcome to Ismail International School
+          Welcome to Ismael International School
         </motion.h1>
 
         <div className="grid grid-cols-1 tablet:grid-cols-2 gap-8" ref={refContent}>
@@ -98,7 +98,7 @@ const Welcome = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={controlsContent}
               >
-                At Ismail British International School, education extends beyond the
+                At Ismael British International School, education extends beyond the
                 confines of textbooks and classrooms. The curriculum is designed to
                 empower learners with a global perspective, fostering critical thinking,
                 problem-solving, and collaboration skills.
@@ -191,7 +191,7 @@ const Welcome = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={controlsContent}
         >
-          Ismail British International School
+          Ismael British International School
         </motion.h2>
       </div>
     </div>

@@ -104,7 +104,7 @@ const learningPage = () => {
                     x: 0,
                     transition: { duration: 0.8, ease: "easeInOut", delay: 0.4 },
                   }}>
-                  Welcome to Ismail British International School.
+                  Welcome to Ismael British International School.
                 </motion.h2>
               </motion.div>
             </div>
@@ -139,7 +139,7 @@ const learningPage = () => {
           </div>
         </h1>
         <div className="text-base text-sudo2 font-normal text-start">
-          <p>Ismail British International School welcomes applications for enrollment for all year levels...</p>
+          <p>Ismael British International School welcomes applications for enrollment for all year levels...</p>
         </div>
 
         <div className='relative py-16 mb-2 flex justify-center items-center'>

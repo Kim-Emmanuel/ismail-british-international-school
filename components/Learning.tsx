@@ -68,7 +68,7 @@ const Learning = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeInOut", delay: 0.4 }}
             >
-              At Ismail British International School, learning is a joyous
+              At Ismael British International School, learning is a joyous
               adventure! We believe in engaging primary kids through playful
               activities, hands-on experiences, and small class sizes to ensure
               individual attention and personalized learning. Imagine building a

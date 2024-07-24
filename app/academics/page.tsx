@@ -86,7 +86,7 @@ const academicsPage = () => {
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeInOut", delay: 0.4 } }}
                 >
-                  Welcome to Ismail British International School.
+                  Welcome to Ismael British International School.
                 </motion.h2>
                 {/* **Moved the button inside the motion.div** */}
                 <Link href="/">

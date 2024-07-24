@@ -12,15 +12,15 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 // export const metadata: Metadata = {
-//   title: "About Ismail British International School | A World-Class Education", 
-//   description: "Discover the heart of Ismail British International School: our mission, vision, values, and commitment to providing a world-class education for students of all ages. Learn about our unique learning environment and why we are the school of choice for families in the region.",
-//   metadataBase: new URL("https://www.ismailbritishschool.com/about"), 
+//   title: "About Ismael British International School | A World-Class Education", 
+//   description: "Discover the heart of Ismael British International School: our mission, vision, values, and commitment to providing a world-class education for students of all ages. Learn about our unique learning environment and why we are the school of choice for families in the region.",
+//   metadataBase: new URL("https://www.Ismaelbritishschool.com/about"), 
 //   openGraph: {
-//     title: "About Ismail British International School | A World-Class Education",
-//     url: "https://www.ismailbritishschool.com/about",
-//     description: "Discover the heart of Ismail British International School: our mission, vision, values, and commitment to providing a world-class education for students of all ages. Learn about our unique learning environment and why we are the school of choice for families in the region.",
-//     images: "https://www.ismailbritishschool.com/images/about_page_og.jpg", // Replace with your actual OG image URL for the about page
-//     site_name: "Ismail British International School",
+//     title: "About Ismael British International School | A World-Class Education",
+//     url: "https://www.Ismaelbritishschool.com/about",
+//     description: "Discover the heart of Ismael British International School: our mission, vision, values, and commitment to providing a world-class education for students of all ages. Learn about our unique learning environment and why we are the school of choice for families in the region.",
+//     images: "https://www.Ismaelbritishschool.com/images/about_page_og.jpg", // Replace with your actual OG image URL for the about page
+//     site_name: "Ismael British International School",
 //   },
 // };
 
@@ -176,7 +176,7 @@ const aboutPage = () => {
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeInOut", delay: 0.4 } }}
                 >
-                  Welcome to Ismail British International School.
+                  Welcome to Ismael British International School.
                 </motion.h2>
               </motion.div>
               <div className="absolute bottom-10 mt-4 font-semibold text-xs text-orange z-0">
@@ -212,7 +212,7 @@ const aboutPage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={controlsStory}
           >
-            Who is Ismail British International School?
+            Who is Ismael British International School?
           </motion.h2>
           <motion.p
             className="text-lg mb-6 flex justify-start text-wrap text-sudo2 tablet:px-18 laptop:px-1"
@@ -233,7 +233,7 @@ const aboutPage = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={controlsStory}
             >
-              Ismail British International School: A Journey of Excellence
+              Ismael British International School: A Journey of Excellence
             </motion.h3>
             {showMore && (
               <motion.p
@@ -311,7 +311,7 @@ const aboutPage = () => {
             <div className="relative flex justify-end items-center desktop:px-1 tablet:px-0">
               <Image
                 src="/mission.svg"
-                alt="Ismail British International School"
+                alt="Ismael British International School"
                 width={180}
                 height={180}
                 className="max-w-full tablet:max-w-md" // Add max-width for responsiveness
@@ -323,7 +323,7 @@ const aboutPage = () => {
             <div className="relative tablet:px-0 desktop:px-1 flex  items-center">
               <Image
                 src="/vision.svg"
-                alt="Ismail British International School"
+                alt="Ismael British International School"
                 width={230}
                 height={230}
                 className="max-w-full tablet:max-w-md" // Add max-width for responsiveness

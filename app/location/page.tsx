@@ -128,7 +128,7 @@ const locationPage = () => {
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeInOut", delay: 0.4 } }}
                 >
-                  Welcome to Ismail British International School.
+                  Welcome to Ismael British International School.
                 </motion.h2>
               </motion.div>
             </div>
@@ -188,7 +188,7 @@ const locationPage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={controlsAddress}
           >
-            Ismail British International School.
+            Ismael British International School.
           </motion.h2>
           <motion.p
             className="text-gray-600 text-base font-normal leading-relaxed"
@@ -245,7 +245,7 @@ const locationPage = () => {
             <div className="w-28 bg-grey h-0.5"></div>
           </div>
         </motion.h2>
-        
+
         <motion.div
           className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2 gap-12"
           initial={{ opacity: 0, y: 20 }}

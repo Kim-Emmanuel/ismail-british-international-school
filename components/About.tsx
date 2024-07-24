@@ -212,7 +212,7 @@ const About = () => {
 					animate={animation}
 					transition={{ duration: 1, delay: 0.7 }}>
 					<h2 className='text-3xl font-bold mb-4 flex justify-start text-sudo text-start'>
-						Who is Ismail British International School?
+						Who is Ismael British International School?
 					</h2>
 					<p className='text-lg mb-6 flex justify-start text-wrap text-start text-sudo2 tablet:px-18 laptop:px-1'>
 						Ismael British International School stands as a beacon of educational
@@ -225,7 +225,7 @@ const About = () => {
 
 					<motion.div variants={itemVariants}>
 						<h3 className='text-xl font-bold text-sudo2 mb-4'>
-							Ismail British International School: A Journey of Excellence
+							Ismael British International School: A Journey of Excellence
 						</h3>
 						{showMore && (
 							<p className='text-lg text-sudo2 mb-6 text-wrap laptop:px-1'>
@@ -297,7 +297,7 @@ const About = () => {
 					<div className='relative flex justify-end items-center desktop:px-1 tablet:px-0'>
 						<Image
 							src='/mission.svg'
-							alt='Ismail British International School'
+							alt='Ismael British International School'
 							width={180}
 							height={180}
 							className='max-w-full tablet:max-w-md' // Add max-width for responsiveness
@@ -309,7 +309,7 @@ const About = () => {
 					<div className='relative tablet:px-0 desktop:px-1 flex  items-center'>
 						<Image
 							src='/vision.svg'
-							alt='Ismail British International School'
+							alt='Ismael British International School'
 							width={230}
 							height={230}
 							className='max-w-full tablet:max-w-md' // Add max-width for responsiveness
